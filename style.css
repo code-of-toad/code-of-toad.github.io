@@ -304,7 +304,8 @@ section {
         top: 100%;
         right: 0;
         width: 50%;
-        padding: 1rem 3rem;
+        margin-top: 0;
+        padding: 0rem 1rem;
         background-color: rgba(0, 0, 0, 0.8);
         border-left: 2px solid var(--color-main);
         border-bottom: 2px solid var(--color-main);
@@ -312,8 +313,8 @@ section {
         display: none;
     } .navbar a {
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
         color: var(--color-text);
     } .navbar.active {
         display: block;
