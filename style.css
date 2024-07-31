@@ -291,9 +291,12 @@ section {
     font-size: 16px;
 }
 
-@media(max-width:1024px) {
+@media(max-width:760px) {
     #menu-icon {
         display: block;
+    }
+    .logo {
+        font-size: 2rem;
     }
     .navbar {
         position: absolute;
