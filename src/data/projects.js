@@ -2,28 +2,6 @@
 export const projects = {
   cs: [
     {
-      id: 'cs-1',
-      title: 'TSH: A Tiny Shell with Job Control',
-      problem: 'Implementing a fully functional UNIX shell in C that supports job control, signal handling, I/O redirection, and piping to demonstrate mastery of systems programming concepts.',
-      role: 'Systems Programmer & Developer',
-      tools: ['C', 'UNIX System Calls', 'GCC', 'Make', 'Signal Handling', 'Process Management'],
-      whatIdid: 'Developed a complete command-line shell implementation in C with comprehensive systems programming features. Implemented process management using fork() and execve() for command execution, and built a robust job control system supporting both foreground and background processes with proper state management.\n\nCreated a comprehensive signal handling system for SIGCHLD (process termination), SIGINT (interrupt), and SIGTSTP (suspend), enabling proper parent-child process communication. Developed built-in commands including quit, jobs, fg, and bg for job management.\n\nImplemented I/O redirection for both input and output streams, and designed a multi-stage piping system with proper process chaining and communication. Built concurrent job management supporting up to 16 simultaneous jobs with process group management for proper signal isolation.\n\nAddressed race conditions through strategic signal blocking and implemented proper zombie process prevention to ensure clean resource management.',
-      outcome: 'Created a robust, fully functional shell that passes comprehensive trace-driven tests, demonstrating proficiency in low-level systems programming.\n\nThe implementation correctly handles complex scenarios including signal forwarding between processes, job state transitions (running, stopped, terminated), pipeline execution with multiple stages, and graceful error recovery.\n\nSuccessfully showcases deep understanding of the UNIX process model, asynchronous programming with signals, and proper resource management in systems-level code. The shell demonstrates production-quality error handling and edge case management.',
-      github: 'https://github.com/code-of-toad/CSC209H5-Winter-2024-Student-UNIX-Shell',
-      image: '/projects/tsh_thumbnail.png'
-    },
-    {
-      id: 'cs-2',
-      title: 'Sokoban: RISC-V Assembly Edition',
-      problem: 'Implementing a fully-featured Sokoban puzzle game entirely in RISC-V 32i Assembly Language with procedurally generated levels and solvability guarantees.',
-      role: 'Systems Programmer & Assembly Developer',
-      tools: ['RISC-V 32i Assembly', 'RISC-V ISA', 'System Calls', 'Stack-based Memory Management', 'LFSR RNG'],
-      whatIdid: 'Developed a complete Sokoban game implementation from scratch in low-level RISC-V assembly (~2,900 lines). Built a custom Linear Feedback Shift Register (LFSR) pseudo-random number generator for deterministic randomness.\n\nDesigned and implemented a procedural level generation algorithm that creates solvable levels with dynamically sized grids (10-20 rows/cols), internal walls covering exactly 25% of empty space, and variable box and target placement. The algorithm ensures all generated levels are guaranteed to be solvable.\n\nImplemented sophisticated stack-based memory management using frame and stack pointers, managing all game state entirely on the stack without heap allocation. Created a game state machine with separate initial and current state storage for reset functionality.\n\nDeveloped collision detection and box pushing mechanics, victory detection logic, and a comprehensive game loop with WASD controls and interactive UI rendering through system calls.',
-      outcome: 'Successfully created a fully functional, playable Sokoban game demonstrating mastery of low-level systems programming.\n\nThe implementation features robust procedural level generation that guarantees solvability, ensuring players always receive playable puzzles. Memory management is handled entirely on the stack, demonstrating efficient resource usage without dynamic allocation.\n\nThe codebase features modular function design with comprehensive documentation, making the ~2,900 lines of assembly code maintainable and understandable. Showcases proficiency in assembly language programming, algorithm design in a low-level context, and systems programming principles including I/O operations and state management—all achieved without any high-level language dependencies.',
-      github: 'https://github.com/code-of-toad/CSC258H5-Fall-2024-Project-Sokoban',
-      image: '/projects/proj_sokoban_thumbnail.png'
-    },
-    {
       id: 'cs-5',
       title: 'E-Commerce Backend: CSSU Rewards System API',
       problem: 'Designing and implementing a robust RESTful backend API for a points-based loyalty program system, requiring secure authentication, role-based access control, transaction processing, and promotion management.',
@@ -56,6 +34,28 @@ export const projects = {
       outcome: 'Successfully created robust audio processing tools that manipulate WAV files at the byte level, demonstrating mastery of low-level systems programming.\n\nThe implementation showcases efficient algorithms with O(n) time complexity and O(d) space complexity for the echo effect. Memory management is handled properly without leaks, validating best practices for systems programming.\n\nBinary format parsing and manipulation demonstrates deep understanding of file format specifications. The circular buffer implementation for echo delay showcases efficient data structure usage, while the vocal removal algorithm shows understanding of audio processing principles.\n\nBoth tools handle edge cases gracefully and include comprehensive error handling, providing production-quality robustness and validating systems programming best practices.',
       github: 'https://github.com/code-of-toad/project_audio_manipulation_with_c',
       image: '/projects/audio_manipulation_with_c.png'
+    },
+    {
+      id: 'cs-1',
+      title: 'TSH: A Tiny Shell with Job Control',
+      problem: 'Implementing a fully functional UNIX shell in C that supports job control, signal handling, I/O redirection, and piping to demonstrate mastery of systems programming concepts.',
+      role: 'Systems Programmer & Developer',
+      tools: ['C', 'UNIX System Calls', 'GCC', 'Make', 'Signal Handling', 'Process Management'],
+      whatIdid: 'Developed a complete command-line shell implementation in C with comprehensive systems programming features. Implemented process management using fork() and execve() for command execution, and built a robust job control system supporting both foreground and background processes with proper state management.\n\nCreated a comprehensive signal handling system for SIGCHLD (process termination), SIGINT (interrupt), and SIGTSTP (suspend), enabling proper parent-child process communication. Developed built-in commands including quit, jobs, fg, and bg for job management.\n\nImplemented I/O redirection for both input and output streams, and designed a multi-stage piping system with proper process chaining and communication. Built concurrent job management supporting up to 16 simultaneous jobs with process group management for proper signal isolation.\n\nAddressed race conditions through strategic signal blocking and implemented proper zombie process prevention to ensure clean resource management.',
+      outcome: 'Created a robust, fully functional shell that passes comprehensive trace-driven tests, demonstrating proficiency in low-level systems programming.\n\nThe implementation correctly handles complex scenarios including signal forwarding between processes, job state transitions (running, stopped, terminated), pipeline execution with multiple stages, and graceful error recovery.\n\nSuccessfully showcases deep understanding of the UNIX process model, asynchronous programming with signals, and proper resource management in systems-level code. The shell demonstrates production-quality error handling and edge case management.',
+      github: 'https://github.com/code-of-toad/CSC209H5-Winter-2024-Student-UNIX-Shell',
+      image: '/projects/tsh_thumbnail.png'
+    },
+    {
+      id: 'cs-2',
+      title: 'Sokoban: RISC-V Assembly Edition',
+      problem: 'Implementing a fully-featured Sokoban puzzle game entirely in RISC-V 32i Assembly Language with procedurally generated levels and solvability guarantees.',
+      role: 'Systems Programmer & Assembly Developer',
+      tools: ['RISC-V 32i Assembly', 'RISC-V ISA', 'System Calls', 'Stack-based Memory Management', 'LFSR RNG'],
+      whatIdid: 'Developed a complete Sokoban game implementation from scratch in low-level RISC-V assembly (~2,900 lines). Built a custom Linear Feedback Shift Register (LFSR) pseudo-random number generator for deterministic randomness.\n\nDesigned and implemented a procedural level generation algorithm that creates solvable levels with dynamically sized grids (10-20 rows/cols), internal walls covering exactly 25% of empty space, and variable box and target placement. The algorithm ensures all generated levels are guaranteed to be solvable.\n\nImplemented sophisticated stack-based memory management using frame and stack pointers, managing all game state entirely on the stack without heap allocation. Created a game state machine with separate initial and current state storage for reset functionality.\n\nDeveloped collision detection and box pushing mechanics, victory detection logic, and a comprehensive game loop with WASD controls and interactive UI rendering through system calls.',
+      outcome: 'Successfully created a fully functional, playable Sokoban game demonstrating mastery of low-level systems programming.\n\nThe implementation features robust procedural level generation that guarantees solvability, ensuring players always receive playable puzzles. Memory management is handled entirely on the stack, demonstrating efficient resource usage without dynamic allocation.\n\nThe codebase features modular function design with comprehensive documentation, making the ~2,900 lines of assembly code maintainable and understandable. Showcases proficiency in assembly language programming, algorithm design in a low-level context, and systems programming principles including I/O operations and state management—all achieved without any high-level language dependencies.',
+      github: 'https://github.com/code-of-toad/CSC258H5-Fall-2024-Project-Sokoban',
+      image: '/projects/proj_sokoban_thumbnail.png'
     }
   ],
   stats: [
