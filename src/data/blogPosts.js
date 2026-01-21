@@ -6,7 +6,7 @@ export const blogPosts = [
   {
     id: 'post-1',
     title: 'Free Will',
-    date: '2025-01-15',
+    date: '2026-01-18',
     excerpt: 'Exploring the nature of free will as the human ability to account for deterministic future chains of events and make choices accordingly, and how literature and art expand our consciousness and capability of free will.',
     category: 'Philosophy',
     tags: ['Free Will', 'Consciousness', 'Literature', 'Art'],
