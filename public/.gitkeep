@@ -1,0 +1,16 @@
+# Public Assets Folder
+# 
+# Place your profile image here as "profile.jpg"
+# Supported formats: JPG, PNG, WebP
+# Recommended size: 400x400px to 800x800px (square)
+# Recommended file size: under 200KB for fast loading
+#
+# Place your resume PDF here as "resume.pdf"
+# The download button will automatically work when this file is present
+#
+# Project assets:
+# Create a "projects" subfolder and place:
+# - Project images (JPG, PNG, WebP recommended)
+# - Project reports/PDFs
+# Example: public/projects/student-mental-health-infographic.jpg
+#          public/projects/student-mental-health-report.pdf
