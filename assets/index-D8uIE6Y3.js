@@ -84,7 +84,25 @@ Developed collision detection and box pushing mechanics, victory detection logic
 
 The implementation features robust procedural level generation that guarantees solvability, ensuring players always receive playable puzzles. Memory management is handled entirely on the stack, demonstrating efficient resource usage without dynamic allocation.
 
-The codebase features modular function design with comprehensive documentation, making the ~2,900 lines of assembly code maintainable and understandable. Showcases proficiency in assembly language programming, algorithm design in a low-level context, and systems programming principles including I/O operations and state management—all achieved without any high-level language dependencies.`,github:"https://github.com/code-of-toad/CSC258H5-Fall-2024-Project-Sokoban",image:"/projects/proj_sokoban_thumbnail.png"},{id:"cs-3",title:"Simon Game: RISC-V Assembly LED Matrix Implementation",problem:"Implementing a complete Simon memory game on a 15x15 LED matrix using RISC-V assembly, featuring memory-mapped I/O, dynamic sequence generation, and interactive gameplay with a d-pad controller.",role:"Systems Programmer & Assembly Developer",tools:["RISC-V Assembly","Memory-Mapped I/O","LED Matrix Control","D-Pad Input Polling","Stack-based Memory"],whatIdid:`Developed a fully functional Simon game in RISC-V assembly for memory-mapped I/O hardware. Implemented LED matrix control with custom drawing routines for pixel-level manipulation, enabling precise control over the 15x15 LED display.
+The codebase features modular function design with comprehensive documentation, making the ~2,900 lines of assembly code maintainable and understandable. Showcases proficiency in assembly language programming, algorithm design in a low-level context, and systems programming principles including I/O operations and state management—all achieved without any high-level language dependencies.`,github:"https://github.com/code-of-toad/CSC258H5-Fall-2024-Project-Sokoban",image:"/projects/proj_sokoban_thumbnail.png"},{id:"cs-5",title:"E-Commerce Backend: CSSU Rewards System API",problem:"Designing and implementing a robust RESTful backend API for a points-based loyalty program system, requiring secure authentication, role-based access control, transaction processing, and promotion management.",role:"Backend Developer & API Architect",tools:["Node.js","Express.js","Prisma ORM","JWT","bcrypt","SQLite","RESTful API Design","RBAC"],whatIdid:`Developed a comprehensive backend API for an e-commerce rewards system using Node.js and Express.js.
+
+**API Design**: Implemented RESTful API design with resource-based URLs and proper HTTP methods/status codes. Created a four-tier role-based access control system (regular, cashier, manager, superuser) with granular permission checks at the controller level.
+
+**Authentication & Security**: Built JWT-based authentication with 24-hour token expiration. Implemented secure password hashing using bcrypt with 10 salt rounds. Created comprehensive input validation and sanitization helpers to prevent injection attacks.
+
+**User Management**: Developed a complete user management system including registration, profile updates, and password reset with secure UUID-based token generation and expiration.
+
+**Transaction System**: Built a transaction system supporting purchase transactions with automatic points calculation (4 points per dollar) and adjustment capabilities for managers.
+
+**Promotions**: Implemented a promotions system with automatic promotions (time-based, spending-based) and one-time use promotions with proper validation.
+
+**Database**: Designed database schema using Prisma with migrations, foreign keys, enums, and cascade deletes. Optimized queries using concurrent database operations with Promise.all() for parallel queries and efficient pagination.`,outcome:`Created a production-ready backend API demonstrating expertise in web development, database design, and security best practices.
+
+The implementation successfully handles complex business logic including automatic points calculation, promotion application, and role-based data visibility. Robust security measures with password hashing, JWT authentication, and input validation protect against common vulnerabilities.
+
+Database design using Prisma ensures type safety, proper relationships, and maintainable schema evolution through migrations. The modular architecture with separation of concerns (controllers, services, routes, middleware) promotes code maintainability and scalability.
+
+Successfully showcases understanding of RESTful API principles, authentication/authorization patterns, database optimization techniques, and enterprise-level backend development practices.`,github:"https://github.com/code-of-toad/project_ecommerce_system_backend",image:"/projects/ecommerce_project.png"},{id:"cs-3",title:"Simon Game: RISC-V Assembly LED Matrix Implementation",problem:"Implementing a complete Simon memory game on a 15x15 LED matrix using RISC-V assembly, featuring memory-mapped I/O, dynamic sequence generation, and interactive gameplay with a d-pad controller.",role:"Systems Programmer & Assembly Developer",tools:["RISC-V Assembly","Memory-Mapped I/O","LED Matrix Control","D-Pad Input Polling","Stack-based Memory"],whatIdid:`Developed a fully functional Simon game in RISC-V assembly for memory-mapped I/O hardware. Implemented LED matrix control with custom drawing routines for pixel-level manipulation, enabling precise control over the 15x15 LED display.
 
 Built pseudo-random sequence generation using timer-based ecall system calls, and designed stack-based dynamic sequence storage allowing unbounded pattern growth without fixed memory limits.
 
@@ -106,25 +124,7 @@ The implementation showcases efficient algorithms with O(n) time complexity and 
 
 Binary format parsing and manipulation demonstrates deep understanding of file format specifications. The circular buffer implementation for echo delay showcases efficient data structure usage, while the vocal removal algorithm shows understanding of audio processing principles.
 
-Both tools handle edge cases gracefully and include comprehensive error handling, providing production-quality robustness and validating systems programming best practices.`,github:"https://github.com/code-of-toad/project_audio_manipulation_with_c",image:"/projects/audio_manipulation_with_c.png"},{id:"cs-5",title:"E-Commerce Backend: CSSU Rewards System API",problem:"Designing and implementing a robust RESTful backend API for a points-based loyalty program system, requiring secure authentication, role-based access control, transaction processing, and promotion management.",role:"Backend Developer & API Architect",tools:["Node.js","Express.js","Prisma ORM","JWT","bcrypt","SQLite","RESTful API Design","RBAC"],whatIdid:`Developed a comprehensive backend API for an e-commerce rewards system using Node.js and Express.js.
-
-**API Design**: Implemented RESTful API design with resource-based URLs and proper HTTP methods/status codes. Created a four-tier role-based access control system (regular, cashier, manager, superuser) with granular permission checks at the controller level.
-
-**Authentication & Security**: Built JWT-based authentication with 24-hour token expiration. Implemented secure password hashing using bcrypt with 10 salt rounds. Created comprehensive input validation and sanitization helpers to prevent injection attacks.
-
-**User Management**: Developed a complete user management system including registration, profile updates, and password reset with secure UUID-based token generation and expiration.
-
-**Transaction System**: Built a transaction system supporting purchase transactions with automatic points calculation (4 points per dollar) and adjustment capabilities for managers.
-
-**Promotions**: Implemented a promotions system with automatic promotions (time-based, spending-based) and one-time use promotions with proper validation.
-
-**Database**: Designed database schema using Prisma with migrations, foreign keys, enums, and cascade deletes. Optimized queries using concurrent database operations with Promise.all() for parallel queries and efficient pagination.`,outcome:`Created a production-ready backend API demonstrating expertise in web development, database design, and security best practices.
-
-The implementation successfully handles complex business logic including automatic points calculation, promotion application, and role-based data visibility. Robust security measures with password hashing, JWT authentication, and input validation protect against common vulnerabilities.
-
-Database design using Prisma ensures type safety, proper relationships, and maintainable schema evolution through migrations. The modular architecture with separation of concerns (controllers, services, routes, middleware) promotes code maintainability and scalability.
-
-Successfully showcases understanding of RESTful API principles, authentication/authorization patterns, database optimization techniques, and enterprise-level backend development practices.`,github:"https://github.com/code-of-toad/project_ecommerce_system_backend",image:"/projects/ecommerce_project.png"}],stats:[{id:"stats-2",title:"Insights into Student Well-Being: PSY100 Survey Analysis",problem:"Exploring happiness and self-esteem trends in PSY100 students using survey data to understand distributions, group comparisons, and associations between psychological measures.",role:"Data Analyst & Statistical Researcher (Team Member)",tools:["R","tidyverse","ggplot2","mosaic","janitor","RColorBrewer"],whatIdid:`Conducted comprehensive descriptive analysis on survey data from 657 PSY100 students.
+Both tools handle edge cases gracefully and include comprehensive error handling, providing production-quality robustness and validating systems programming best practices.`,github:"https://github.com/code-of-toad/project_audio_manipulation_with_c",image:"/projects/audio_manipulation_with_c.png"}],stats:[{id:"stats-2",title:"Insights into Student Well-Being: PSY100 Survey Analysis",problem:"Exploring happiness and self-esteem trends in PSY100 students using survey data to understand distributions, group comparisons, and associations between psychological measures.",role:"Data Analyst & Statistical Researcher (Team Member)",tools:["R","tidyverse","ggplot2","mosaic","janitor","RColorBrewer"],whatIdid:`Conducted comprehensive descriptive analysis on survey data from 657 PSY100 students.
 
 Performed data cleaning with missing value handling and prepared the dataset for analysis. Created frequency distributions and histograms to visualize data patterns and distributions.
 
