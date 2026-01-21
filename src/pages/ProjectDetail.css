@@ -1,0 +1,203 @@
+.project-detail-page {
+  width: 100%;
+}
+
+.project-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: var(--font-medium);
+  margin-bottom: var(--spacing-xl);
+  transition: color var(--transition-base);
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.project-detail-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.project-detail-title {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
+}
+
+.project-detail-category {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+}
+
+.project-detail-image-container {
+  width: 100%;
+  margin-bottom: var(--spacing-3xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-secondary);
+}
+
+.project-detail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.project-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.project-detail-section {
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-detail-section:last-of-type {
+  border-bottom: none;
+}
+
+.section-heading {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-detail-problem,
+.project-detail-role,
+.project-detail-description,
+.project-detail-outcome {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.project-detail-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.tool-badge {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  transition: all var(--transition-base);
+}
+
+.tool-badge:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.project-detail-actions {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 2px solid var(--border-color);
+}
+
+.action-link {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.project-not-found {
+  text-align: center;
+  padding: var(--spacing-4xl) var(--spacing-lg);
+}
+
+.project-not-found h1 {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+.project-not-found p {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .project-detail-title {
+    font-size: var(--text-3xl);
+  }
+
+  .section-heading {
+    font-size: var(--text-xl);
+  }
+
+  .project-detail-problem,
+  .project-detail-role,
+  .project-detail-description,
+  .project-detail-outcome {
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+
+  .project-detail-actions {
+    flex-direction: column;
+  }
+
+  .action-link,
+  .action-button {
+    width: 100%;
+  }
+
+  .action-link .btn,
+  .action-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail-title {
+    font-size: var(--text-2xl);
+  }
+
+  .section-heading {
+    font-size: var(--text-lg);
+  }
+}

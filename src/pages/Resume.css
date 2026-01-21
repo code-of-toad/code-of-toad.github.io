@@ -1,0 +1,91 @@
+.resume-page {
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-container {
+  max-width: 600px;
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.resume-title {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.resume-description {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-3xl);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-download-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--text-lg);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  min-width: 280px;
+  justify-content: center;
+}
+
+.download-icon {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+.resume-note {
+  font-size: var(--text-sm);
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .resume-container {
+    max-width: 100%;
+    padding: 0 var(--spacing-md);
+  }
+
+  .resume-title {
+    font-size: var(--text-3xl);
+  }
+
+  .resume-description {
+    font-size: var(--text-base);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .resume-download-btn {
+    width: 100%;
+    min-width: auto;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-title {
+    font-size: var(--text-2xl);
+  }
+
+  .resume-description {
+    font-size: var(--text-sm);
+  }
+}
