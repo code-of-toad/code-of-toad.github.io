@@ -5,58 +5,23 @@
 export const blogPosts = [
   {
     id: 'post-1',
-    title: 'Sample Blog Post',
-    date: '2024-12-19',
-    excerpt: 'This is a sample blog post excerpt that will appear in the blog listing page.',
-    category: 'Statistics',
-    tags: ['Data Analysis', 'R', 'Visualization'],
+    title: 'Free Will',
+    date: '2025-01-15',
+    excerpt: 'Exploring the nature of free will as the human ability to account for deterministic future chains of events and make choices accordingly, and how literature and art expand our consciousness and capability of free will.',
+    category: 'Philosophy',
+    tags: ['Free Will', 'Consciousness', 'Literature', 'Art'],
     content: `
-# Sample Blog Post
+# Free Will
 
-This is a sample blog post demonstrating the blog/notes section functionality.
+I define free will to be the human ability to account for deterministic future chains of events and make a choice accordingly. Although, of course, it's impossible to predict futures with accuracy. They can only be inferred via past experiences and examples from others. This ignorance is a call to humility as a human being who cannot know more than human's own conception of God. But, I digress.
 
-## Introduction
+The caveat here is that the set of choices that present themselves to the mind appears to be constrained by all (but, only) all that one knows.
 
-You can write your blog posts in markdown format here. The content supports:
+This is perhaps why mythologies, canonical stories of culture, music and other art forms are passed on through time, because under past-determined constraints that are one's environment and upbringing, literature and art introduce & exemplify the manifestation of new possibilities, thereby expanding the boundary of constraints to which one's free will is subject.
 
-- **Bold text**
-- *Italic text*
-- Lists (both ordered and unordered)
-- Code blocks
-- Links
-- And more markdown features
-
-## Main Content
-
-This section demonstrates how you can structure longer-form content for your blog posts. You can write about:
-
-1. Statistical analysis methods
-2. Programming techniques
-3. Academic insights
-4. Project reflections
-5. Technical tutorials
-
-## Code Example
-
-Here's an example of code formatting:
-
-\`\`\`python
-import pandas as pd
-import numpy as np
-
-# Load data
-data = pd.read_csv('data.csv')
-
-# Perform analysis
-results = data.groupby('category').mean()
-print(results)
-\`\`\`
-
-## Conclusion
-
-This is a fully functional blog system that you can use to share your thoughts, insights, and learnings.
+In other words, literature and art expand one's consciousness and capability of free will.
     `.trim(),
-    readTime: '5 min read'
+    readTime: '2 min read'
   }
 ]
 
