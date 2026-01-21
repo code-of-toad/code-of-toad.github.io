@@ -5,8 +5,10 @@ function Resume() {
   const handleDownload = () => {
     // One-click PDF download - no forms required
     // The resume.pdf file should be placed in the public folder
+    const baseUrl = import.meta.env.BASE_URL || '/'
+    const resumePath = `${baseUrl}resume.pdf`
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
+    link.href = resumePath
     link.download = 'resume.pdf'
     document.body.appendChild(link)
     link.click()

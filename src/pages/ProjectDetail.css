@@ -111,11 +111,37 @@
 }
 
 .project-detail-problem,
-.project-detail-role,
+.project-detail-role {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
 .project-detail-description,
 .project-detail-outcome {
   font-size: var(--text-lg);
   line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.project-detail-description p,
+.project-detail-outcome p {
+  margin-bottom: var(--spacing-lg);
+}
+
+.project-detail-description p:last-child,
+.project-detail-outcome p:last-child {
+  margin-bottom: 0;
+}
+
+.project-detail-description .paragraph-bold-header {
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.project-detail-description strong {
+  font-weight: var(--font-semibold);
   color: var(--text-primary);
 }
 
@@ -195,11 +221,20 @@
   }
 
   .project-detail-problem,
-  .project-detail-role,
+  .project-detail-role {
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+
   .project-detail-description,
   .project-detail-outcome {
     font-size: var(--text-base);
     line-height: 1.7;
+  }
+
+  .project-detail-description p,
+  .project-detail-outcome p {
+    margin-bottom: var(--spacing-md);
   }
 
   .project-detail-actions {

@@ -11,19 +11,19 @@ function Contact() {
         
         <div className="contact-links">
           <a 
-            href="mailto:your.email@example.com" 
+            href="mailto:danny.han@mail.utoronto.ca" 
             className="contact-link email-link"
             aria-label="Send an email"
           >
             <span className="contact-icon">✉</span>
             <div className="contact-link-content">
               <span className="contact-link-label">Email</span>
-              <span className="contact-link-value">your.email@example.com</span>
+              <span className="contact-link-value">danny.han@mail.utoronto.ca</span>
             </div>
           </a>
           
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/code-of-toad" 
             target="_blank" 
             rel="noopener noreferrer"
             className="contact-link github-link"
@@ -32,12 +32,12 @@ function Contact() {
             <span className="contact-icon">💻</span>
             <div className="contact-link-content">
               <span className="contact-link-label">GitHub</span>
-              <span className="contact-link-value">github.com/yourusername</span>
+              <span className="contact-link-value">github.com/code-of-toad</span>
             </div>
           </a>
           
           <a 
-            href="https://linkedin.com/in/yourusername" 
+            href="https://linkedin.com/in/danny-han-6c6f7665" 
             target="_blank" 
             rel="noopener noreferrer"
             className="contact-link linkedin-link"
@@ -46,7 +46,7 @@ function Contact() {
             <span className="contact-icon">💼</span>
             <div className="contact-link-content">
               <span className="contact-link-label">LinkedIn</span>
-              <span className="contact-link-value">linkedin.com/in/yourusername</span>
+              <span className="contact-link-value">linkedin.com/in/danny-han-6c6f7665</span>
             </div>
           </a>
         </div>

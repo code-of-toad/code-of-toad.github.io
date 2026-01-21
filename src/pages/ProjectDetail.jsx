@@ -36,14 +36,16 @@ function ProjectDetail() {
   }
 
   // Get the correct image path with base URL
+  // Use detailImage if available, otherwise fall back to regular image
   const getImageSrc = () => {
-    if (!project.image) return null
+    const imageToUse = project.detailImage || project.image
+    if (!imageToUse) return null
     const baseUrl = import.meta.env.BASE_URL
     if (baseUrl && baseUrl !== '/') {
-      const cleanPath = project.image.startsWith('/') ? project.image.slice(1) : project.image
+      const cleanPath = imageToUse.startsWith('/') ? imageToUse.slice(1) : imageToUse
       return `${baseUrl}${cleanPath}`
     }
-    return project.image
+    return imageToUse
   }
 
   return (
@@ -105,12 +107,37 @@ function ProjectDetail() {
 
           <section className="project-detail-section">
             <h2 className="section-heading">What I Did</h2>
-            <p className="project-detail-description">{project.whatIdid}</p>
+            <div className="project-detail-description">
+              {project.whatIdid.split('\n\n').map((paragraph, index) => {
+                // Check if paragraph starts with ** (bold header)
+                const isBoldHeader = paragraph.trim().startsWith('**') && paragraph.trim().endsWith('**')
+                const cleanParagraph = paragraph.replace(/\*\*/g, '')
+                
+                if (isBoldHeader) {
+                  return <p key={index} className="paragraph-bold-header"><strong>{cleanParagraph}</strong></p>
+                }
+                
+                // Convert remaining **text** to <strong>text</strong>
+                const parts = paragraph.split(/(\*\*.*?\*\*)/g)
+                const formattedParagraph = parts.map((part, i) => {
+                  if (part.startsWith('**') && part.endsWith('**')) {
+                    return <strong key={i}>{part.slice(2, -2)}</strong>
+                  }
+                  return part
+                })
+                
+                return <p key={index}>{formattedParagraph}</p>
+              })}
+            </div>
           </section>
 
           <section className="project-detail-section">
             <h2 className="section-heading">Outcome & Insights</h2>
-            <p className="project-detail-outcome">{project.outcome}</p>
+            <div className="project-detail-outcome">
+              {project.outcome.split('\n\n').map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </section>
 
         </div>
