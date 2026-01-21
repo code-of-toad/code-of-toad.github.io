@@ -19,7 +19,7 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
 }
 
 .about-paragraph {
@@ -50,7 +50,7 @@
   }
 
   .about-content {
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
   }
 }
 
