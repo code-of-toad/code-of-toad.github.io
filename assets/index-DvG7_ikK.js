@@ -151,8 +151,6 @@ Results showed minimal differences across academic programs, suggesting that ind
 `).map((i,o)=>{const a=i.trim().startsWith("**")&&i.trim().endsWith("**"),s=i.replace(/\*\*/g,"");if(a)return u.jsx("p",{className:"paragraph-bold-header",children:u.jsx("strong",{children:s})},o);const h=i.split(/(\*\*.*?\*\*)/g).map((m,g)=>m.startsWith("**")&&m.endsWith("**")?u.jsx("strong",{children:m.slice(2,-2)},g):m);return u.jsx("p",{children:h},o)})})]}),u.jsxs("section",{className:"project-detail-section",children:[u.jsx("h2",{className:"section-heading",children:"Outcome & Insights"}),u.jsx("div",{className:"project-detail-outcome",children:r.outcome.split(`
 
 `).map((i,o)=>u.jsx("p",{children:i},o))})]})]})]})})}const la=[{id:"post-1",title:"Free Will",date:"2026-01-18",excerpt:"Exploring the nature of free will as the human ability to account for deterministic future chains of events and make choices accordingly, and how literature and art expand our consciousness and capability of free will.",category:"Philosophy",tags:["Free Will","Consciousness","Literature","Art"],content:`
-# Free Will
-
 I define free will to be the human ability to account for deterministic future chains of events and make a choice accordingly. Although, of course, it's impossible to predict futures with accuracy. They can only be inferred via past experiences and examples from others. This ignorance is a call to humility as a human being who cannot know more than human's own conception of God. But, I digress.
 
 The caveat here is that the set of choices that present themselves to the mind appears to be constrained by all (but, only) all that one knows.
