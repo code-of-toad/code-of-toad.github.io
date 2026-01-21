@@ -4,6 +4,22 @@
 
 export const blogPosts = [
   {
+    id: 'post-2',
+    title: 'Flower',
+    date: '2026-01-19',
+    excerpt: 'A meditation on diversity, ideas, and human potential—comparing functioning diversity to a flower whose petals of differences manifest from a common center, grounded in nourishment and time.',
+    category: 'Philosophy',
+    tags: ['Diversity', 'Ideas', 'Human Potential', 'Philosophy'],
+    content: `
+An individual set of ideas is one circle in a Venn diagram. All sets of ideas that form a healty center of commonality are worthy to subject to the test of time.
+
+A functioning diversity is not a melting pot of homogeneity, nor is it a chaotic battlefield of differences, but, rather, a flower whose petals of inextinguishable differences manifest the Fibonacci sequence from the bud of human potential founded on the stem of commonality, grounded in the soil of nourishment that is water and time, to look & grow towards the Sun without flying towards it.
+
+The origin of the seed is philosophy.
+    `.trim(),
+    readTime: '1 min read'
+  },
+  {
     id: 'post-1',
     title: 'Free Will',
     date: '2026-01-18',
