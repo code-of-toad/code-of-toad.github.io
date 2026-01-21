@@ -9,7 +9,7 @@ function Resume() {
     // One-click PDF download - no forms required
     const link = document.createElement('a')
     link.href = resumePath
-    link.download = 'resume.pdf'
+    link.download = 'Resume_Danny_Han.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -43,7 +43,7 @@ function Resume() {
             >
               <p className="resume-fallback">
                 Your browser does not support PDFs. 
-                <a href={resumePath} download="resume.pdf">Download the resume instead</a>.
+                <a href={resumePath} download="Resume_Danny_Han.pdf">Download the resume instead</a>.
               </p>
             </iframe>
           </div>
