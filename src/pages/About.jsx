@@ -8,30 +8,23 @@ function About() {
         
         <div className="about-content">
           <p className="about-paragraph">
-            I'm passionate about applying statistical methods and computational techniques to solve 
-            real-world problems. My work focuses on data analysis, statistical modeling, and software 
-            development, with a particular interest in how mathematical insights can be translated 
-            into practical applications. Through my studies in Applied Statistics and complementary 
-            minors in Mathematical Sciences and Computer Science, I've developed a unique perspective 
-            that bridges theory and implementation.
+            I'm a technically driven problem-solver with a strong foundation in mathematics, programming, and data-driven thinking. My work sits at the intersection of analysis, software, and clear communication—I enjoy breaking down complex problems and turning them into solutions that are both effective and easy to understand.
           </p>
           
           <p className="about-paragraph">
-            I'm drawn to complex problems that require both analytical rigor and creative thinking—whether 
-            that's building predictive models, developing data-driven solutions, or creating software 
-            that makes statistical analysis more accessible. My academic focus centers on advanced 
-            statistical methods, probability theory, and computational statistics, while my practical 
-            experience has emphasized the importance of clean code, effective visualization, and 
-            clear communication of results.
+            I've spent several years working one-on-one and in small-group settings as a math tutor and instructor, where I learned how to diagnose problems quickly, adapt explanations to different audiences, and measure progress through clear outcomes. That experience sharpened how I think about systems: identifying gaps, testing approaches, and iterating until results improve. Those same principles guide how I approach software development and data analysis.
           </p>
           
           <p className="about-paragraph">
-            As I look toward my professional future, I'm excited to work in roles where I can leverage 
-            my analytical skills to drive data-informed decisions. I'm particularly interested in 
-            opportunities in data science, statistical consulting, or software development teams that 
-            work on analytical tools. My goal is to continue growing as both a statistician and a 
-            developer, contributing to projects that make a meaningful impact through the thoughtful 
-            application of statistical and computational methods.
+            Technically, I work with Python, C/C++, Java, JavaScript, and React, and I'm comfortable moving between backend logic, data workflows, and analytical reasoning. I care deeply about correctness, clarity, and maintainability—whether I'm writing code, analyzing data, or explaining a solution to someone encountering it for the first time.
+          </p>
+          
+          <p className="about-paragraph">
+            What sets me apart is my ability to bridge technical depth and communication. I enjoy working with people just as much as with systems, and I take pride in making complex ideas approachable without oversimplifying them. I value ownership, thoughtful design, and using data to guide decisions rather than assumptions.
+          </p>
+          
+          <p className="about-paragraph">
+            I'm currently interested in opportunities across software engineering, data/analytics, and technical roles where I can continue learning, building, and contributing to meaningful work. If you're working on something interesting—or just want to talk ideas—I'd be glad to connect.
           </p>
         </div>
       </div>
