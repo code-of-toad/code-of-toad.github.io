@@ -97,7 +97,7 @@ function Layout({ children }) {
         {children}
       </main>
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Portfolio Site</p>
+        <p>&copy; {new Date().getFullYear()} Danny Han. All rights reserved.</p>
       </footer>
     </div>
   )
