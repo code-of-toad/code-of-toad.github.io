@@ -36,6 +36,14 @@
   line-height: 1.2;
 }
 
+.project-detail-header-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-2xl);
+}
+
 .project-detail-category {
   display: inline-block;
   padding: var(--spacing-xs) var(--spacing-md);
@@ -46,13 +54,31 @@
   font-weight: var(--font-semibold);
 }
 
+.project-detail-github-link {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.project-detail-problem-section {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+  border-bottom: none;
+}
+
 .project-detail-image-container {
   width: 100%;
   margin-bottom: var(--spacing-3xl);
+  margin-top: var(--spacing-lg);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   background-color: var(--bg-secondary);
+}
+
+.project-detail-image-container.small-image {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-detail-image {

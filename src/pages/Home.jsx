@@ -9,7 +9,7 @@ function Home() {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              Hi, I'm <span className="highlight">Danny Han</span>
             </h1>
             <p className="hero-subtitle">
               Applied Statistics Student at University of Toronto
@@ -36,7 +36,7 @@ function Home() {
         <div className="hero-visual">
           <div className="profile-image-wrapper">
             <img 
-              src="/profile.jpg" 
+              src={`${import.meta.env.BASE_URL || '/'}profile.jpg`} 
               alt="Profile" 
               className="profile-image"
               loading="eager"

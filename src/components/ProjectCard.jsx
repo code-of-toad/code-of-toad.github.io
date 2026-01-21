@@ -6,8 +6,25 @@ import './ProjectCard.css'
 function ProjectCard({ project, category }) {
   const [imageError, setImageError] = useState(false)
 
-  const handleImageError = () => {
+  const handleImageError = (e) => {
+    console.error('Failed to load image:', project.image)
+    console.error('Image element:', e.target)
+    console.error('Attempted src:', e.target.src)
     setImageError(true)
+  }
+  
+  // Get the correct image path
+  const getImageSrc = () => {
+    if (!project.image) return null
+    // In Vite with base path, public assets might need the base URL in some cases
+    // Try the path as-is first, but we can add base if needed
+    const baseUrl = import.meta.env.BASE_URL
+    // If baseUrl is set and not '/', prepend it (but remove leading slash from image path first)
+    if (baseUrl && baseUrl !== '/') {
+      const cleanPath = project.image.startsWith('/') ? project.image.slice(1) : project.image
+      return `${baseUrl}${cleanPath}`
+    }
+    return project.image
   }
 
   const handleDownloadReport = (e) => {
@@ -30,9 +47,9 @@ function ProjectCard({ project, category }) {
         className="project-card-link"
       >
         <div className="project-card-image-container">
-          {!imageError && project.image ? (
+          {!imageError && getImageSrc() ? (
             <img 
-              src={project.image} 
+              src={getImageSrc()} 
               alt={project.title}
               className="project-card-image"
               onError={handleImageError}
