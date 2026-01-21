@@ -5,7 +5,14 @@ function About() {
     <div className="page about-page">
       <div className="about-container">
         <h1 className="about-title">About Me</h1>
-        
+        <div className="about-image-wrapper">
+          <img 
+            src={`${import.meta.env.BASE_URL}about_me_portrait.jpg`}
+            alt="Danny Han"
+            className="about-portrait"
+            loading="lazy"
+          />
+        </div>
         <div className="about-content">
           <p className="about-paragraph">
             I'm a technically driven problem-solver with a strong foundation in mathematics, programming, and data-driven thinking. My work sits at the intersection of analysis, software, and clear communication—I enjoy breaking down complex problems and turning them into solutions that are both effective and easy to understand.
