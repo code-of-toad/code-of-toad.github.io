@@ -15,9 +15,9 @@ function Home() {
               Applied Statistics Student at University of Toronto
             </p>
             <p className="hero-description">
-              I specialize in statistical analysis, mathematical modeling, and software development. 
-              With a major in Applied Statistics and minors in Mathematical Sciences and Computer Science, 
-              I turn complex data into actionable insights.
+              I specialize in software development, data analysis, and statistical modeling. 
+              With a major in Applied Statistics and minors in Computer Science & Mathematics, 
+              I turn complex data into marketable products and actionable insights.
             </p>
             <div className="hero-cta">
               <Link to="/projects">
