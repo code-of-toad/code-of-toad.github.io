@@ -10,6 +10,17 @@ import About from './pages/About'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
 
+// Component to scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  
+  return null
+}
+
 // Component to handle GitHub Pages 404 redirect
 function RedirectHandler() {
   const location = useLocation()
@@ -42,6 +53,7 @@ function RedirectHandler() {
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
       <RedirectHandler />
       <Layout>
         <Routes>
