@@ -29,7 +29,7 @@ The origin of the seed is philosophy.
     content: `
 I define free will to be the human ability to account for deterministic future chains of events and make a choice accordingly. Although, of course, it's impossible to predict futures with accuracy. They can only be inferred via past experiences and examples from others. This ignorance is a call to humility as a human being who cannot know more than human's own conception of God. But, I digress.
 
-The caveat here is that the set of choices that present themselves to the mind appears to be constrained by all (but, only) all that one knows.
+The caveat here is that the set of choices that present themselves to the mind appears to be constrained by all (and only all) that one knows.
 
 This is perhaps why mythologies, canonical stories of culture, music and other art forms are passed on through time, because under past-determined constraints that are one's environment and upbringing, literature and art introduce & exemplify the manifestation of new possibilities, thereby expanding the boundary of constraints to which one's free will is subject.
 
