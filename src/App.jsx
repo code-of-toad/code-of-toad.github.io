@@ -39,22 +39,23 @@ function RedirectHandler() {
         decodedPath = '/' + decodedPath
       }
       
-      // Only redirect if the current path doesn't match
-      if (location.pathname !== decodedPath) {
-        // Use React Router's navigate to change the route
-        navigate(decodedPath, { replace: true })
-      }
+      // Always redirect if we have a redirect path
+      // This ensures we navigate to the correct route after GitHub Pages 404 redirect
+      navigate(decodedPath, { replace: true })
     }
-  }, [location, navigate])
+  }, [location.search, navigate]) // Only depend on search, not full location
   
   return null
 }
 
 function App() {
+  // Check for redirect path immediately on mount (before Router renders)
+  const baseUrl = import.meta.env.BASE_URL || '/'
+  
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <ScrollToTop />
+    <BrowserRouter basename={baseUrl}>
       <RedirectHandler />
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
