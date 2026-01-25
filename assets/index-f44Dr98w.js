@@ -150,7 +150,7 @@ Results showed minimal differences across academic programs, suggesting that ind
 
 `).map((i,o)=>{const a=i.trim().startsWith("**")&&i.trim().endsWith("**"),s=i.replace(/\*\*/g,"");if(a)return u.jsx("p",{className:"paragraph-bold-header",children:u.jsx("strong",{children:s})},o);const h=i.split(/(\*\*.*?\*\*)/g).map((m,g)=>m.startsWith("**")&&m.endsWith("**")?u.jsx("strong",{children:m.slice(2,-2)},g):m);return u.jsx("p",{children:h},o)})})]}),u.jsxs("section",{className:"project-detail-section",children:[u.jsx("h2",{className:"section-heading",children:"Outcome & Insights"}),u.jsx("div",{className:"project-detail-outcome",children:r.outcome.split(`
 
-`).map((i,o)=>u.jsx("p",{children:i},o))})]})]})]})})}const la=[{id:"post-1",title:"Healthy Faith",date:"2025-11-24",excerpt:"Reflections on the interconnectedness of actions and consequences, the importance of building faith in one's own character, and the freedom to exercise free will in shaping who we become.",category:"Philosophy",tags:["Faith","Character","Self-Improvement","Ethics","Free Will"],content:`
+`).map((i,o)=>u.jsx("p",{children:i},o))})]})]})]})})}const la=[{id:"post-1",title:"Do Unto Self",date:"2025-11-24",excerpt:"Reflections on the interconnectedness of actions and consequences, the importance of building faith in one's own character, and the freedom to exercise free will in shaping who we become.",category:"Philosophy",tags:["Faith","Character","Self-Improvement","Ethics","Free Will"],content:`
 You cannot destroy others without destroying yourself.
 You cannot give life to others without giving yourself life.
 You cannot expect back that which you refuse to give, for if you do, you will look over your shoulders for a price to pay.
