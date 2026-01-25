@@ -5,7 +5,7 @@
 export const blogPosts = [
   {
     id: 'post-1',
-    title: 'Healthy Faith',
+    title: 'Do Unto Self',
     date: '2025-11-24',
     excerpt: 'Reflections on the interconnectedness of actions and consequences, the importance of building faith in one\'s own character, and the freedom to exercise free will in shaping who we become.',
     category: 'Philosophy',
