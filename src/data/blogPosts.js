@@ -4,23 +4,30 @@
 
 export const blogPosts = [
   {
-    id: 'post-2',
-    title: 'Flower',
-    date: '2026-01-19',
-    excerpt: 'A meditation on diversity, ideas, and human potential—comparing functioning diversity to a flower whose petals of differences manifest from a common center, grounded in nourishment and time.',
+    id: 'post-1',
+    title: 'Healthy Faith',
+    date: '2025-11-24',
+    excerpt: 'Reflections on the interconnectedness of actions and consequences, the importance of building faith in one\'s own character, and the freedom to exercise free will in shaping who we become.',
     category: 'Philosophy',
-    tags: ['Diversity', 'Ideas', 'Human Potential', 'Philosophy'],
+    tags: ['Faith', 'Character', 'Self-Improvement', 'Ethics', 'Free Will'],
     content: `
-An individual set of ideas is one circle in a Venn diagram. All sets of ideas that form a healty center of commonality are worthy to subject to the test of time.
+You cannot destroy others without destroying yourself.
+You cannot give life to others without giving yourself life.
+You cannot expect back that which you refuse to give, for if you do, you will look over your shoulders for a price to pay.
 
-A functioning diversity is not a melting pot of homogeneity, nor is it a chaotic battlefield of differences, but, rather, a flower whose petals of inextinguishable differences manifest the Fibonacci sequence from the bud of human potential founded on the stem of commonality, grounded in the soil of nourishment that is water and time, to look & grow towards the Sun without flying towards it.
+Let that price be an unwavering faith in your own character. If that's unrealistic, build the version of you that you'd place faith in. You have that freedom—to exercise free will to alter that which is to be pre-determined. To not know what is newly determined is to know humility as a human being—a call to take faith in self.
 
-The origin of the seed is philosophy.
+Any coward can place his hand on the bible and vocally swear an oath.
+Just be a good person—whatever that means in your own conscience.
+
+Be grateful for what you have. To long for what you perceive to lack is fine, but be an adult about these things, and handle it.
+
+Place the same faith in yourself that you want others to place in themselves.
     `.trim(),
-    readTime: '1 min read'
+    readTime: '2 min read'
   },
   {
-    id: 'post-1',
+    id: 'post-2',
     title: 'Free Will',
     date: '2026-01-18',
     excerpt: 'Exploring the nature of free will as the human ability to account for deterministic future chains of events and make choices accordingly, and how literature and art expand our consciousness and capability of free will.',
@@ -36,6 +43,22 @@ This is perhaps why mythologies, canonical stories of culture, music and other a
 In other words, literature and art expand one's consciousness and capability of free will.
     `.trim(),
     readTime: '2 min read'
+  },
+  {
+    id: 'post-3',
+    title: 'Flower',
+    date: '2026-01-19',
+    excerpt: 'A meditation on diversity, ideas, and human potential—comparing functioning diversity to a flower whose petals of differences manifest from a common center, grounded in nourishment and time.',
+    category: 'Philosophy',
+    tags: ['Diversity', 'Ideas', 'Human Potential', 'Philosophy'],
+    content: `
+An individual set of ideas is one circle in a Venn diagram. All sets of ideas that form a healty center of commonality are worthy to subject to the test of time.
+
+A functioning diversity is not a melting pot of homogeneity, nor is it a chaotic battlefield of differences, but, rather, a flower whose petals of inextinguishable differences manifest the Fibonacci sequence from the bud of human potential founded on the stem of commonality, grounded in the soil of nourishment that is water and time, to look & grow towards the Sun without flying towards it.
+
+The origin of the seed is philosophy.
+    `.trim(),
+    readTime: '1 min read'
   }
 ]
 
