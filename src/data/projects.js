@@ -2,6 +2,17 @@
 export const projects = {
   cs: [
     {
+      id: 'cs-6',
+      title: 'AML Detection Pipeline: Rule-Based + Unsupervised ML Fusion',
+      problem: 'Designing a reproducible anti-money-laundering detection system that can identify high-risk customers without labeled fraud outcomes, while still producing investigator-friendly explanations aligned with AML red-flag frameworks.',
+      role: 'Machine Learning Engineer & Pipeline Developer (Team Member)',
+      tools: ['Python', 'Pandas', 'NumPy', 'scikit-learn', 'PyOD', 'YAML Configuration', 'Unsupervised Learning', 'Anomaly Detection', 'Explainable AI'],
+      whatIdid: 'Built and packaged an end-to-end AML submission pipeline with three production entry points: detection pipeline execution, explanation viewer launch, and AML knowledge library access.\n\n**Pipeline Orchestration**: Structured the system around `run_pipeline.py` to execute rule-based scoring, ML score ingestion, score fusion, top-percentile flagging, and artifact generation in a single reproducible run.\n\n**Rule + ML Fusion**: Implemented a hybrid risk approach combining interpretable category-based AML rules (structuring, channel, geographic, behavioral, profile, cluster risk) with unsupervised anomaly scores from multiple models.\n\n**Model Integration Contract**: Designed a plug-in style ML workflow where any model can be added by exporting `scores_<model>.csv` with `customer_id` and `score`, allowing rapid experimentation without changing core pipeline code.\n\n**Explainability Outputs**: Generated plain-language explanations for every customer that map risk signals back to AML categories, making model outcomes accessible to non-technical investigators.\n\n**Reproducibility & Delivery**: Standardized configuration through YAML, formalized input/output contracts, and automated Task 2/Task 3 output packaging for grading and stakeholder review.',
+      outcome: 'Delivered a robust AML detection framework that balances interpretability and ML-driven anomaly detection under sparse-label conditions.\n\nThe pipeline produces consistent model outputs and customer-level explanations from a single input file and configurable weights, enabling repeatable benchmarking across multiple anomaly models.\n\nThe modular score-file contract reduced integration overhead for new ML models and supported rapid model iteration. This architecture demonstrates practical ML engineering, risk scoring system design, and explainability-aware product thinking for compliance-focused analytics.',
+      github: 'https://github.com/code-of-toad/AML-Detection-Pipeline-Project',
+      image: '/projects/aml_project_thumbnail.png'
+    },
+    {
       id: 'cs-5',
       title: 'E-Commerce Backend: CSSU Rewards System API',
       problem: 'Designing and implementing a robust RESTful backend API for a points-based loyalty program system, requiring secure authentication, role-based access control, transaction processing, and promotion management.',
